@@ -22,7 +22,7 @@ You can access all section on branches. All branches has a README with all conte
 
 ## Setup 
 
-You will need some linux environment. You can use some software to virtualize or use a old laptop. Even if you alread has linux like me *I don't recommend you to use your main OS to study** because if you crash or do something wrong you will be without your computer. 
+You will need some linux environment. You can use some software to virtualize or use a old laptop. Even if you alread has linux like me **I don't recommend you to use your main OS to study** because if you crash or do something wrong you will be without your computer. 
 
 I used a linux container on Docker and you can use this solution like me following the steps above.
 
