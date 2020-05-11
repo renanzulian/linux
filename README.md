@@ -33,9 +33,11 @@ I used a linux container on Docker and you can use this solution like me followi
 2. Select the distro
 
     Some distros are famous on docker like alpine because is very lightweight. I selected Fedora only because I like this distro.
+    `docker pull fedora`
 
 3. Run the container
 
     Go to the page of your container and run the commands that they recommend you use local.
+    `docker container run --name linux -it fedora`
 
 ### Have a nice study!
