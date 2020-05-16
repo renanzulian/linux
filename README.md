@@ -7,8 +7,9 @@ You are in a little repository about linux. Go to [master](https://github.com/re
 
 ### Working on Command line
 
-The terminal is probabily the first things that peoples remember when the subject is Linux. The terminal is basicly a interface to execute commands on linux. The correct term of this interface is **shell**. All Operational System from linux provides some type of shell (usually is bash). You can find many types of shell like zsh, sh, csh and much more. Then you only need to keep on your mind that *we use the shell to execute our commands.*
+The terminal is probabily the first things that peoples remember when the subject is Linux. The terminal is basicly an interface to execute commands on linux. The correct term of this interface is **shell**. All Linux Operational System provides some type of shell (usually is bash). You can find many types of shell like zsh, sh, csh and much more. Then you only need to keep on your mind that *we use the shell to execute our commands.*
 
+#### Command types
 On linux shell you can have two types of commands:
 
 1. Internal command
@@ -33,7 +34,49 @@ On linux shell you can have two types of commands:
 
     If you wanna execute some script or binary that isn't on your path you only need to type down it's absolute path or use `./[nome of the script/binary]` on folder that the content be.
 
+#### Descriptors (Standards inputs and outputs)
 
+Many linux commands needs some inputs and can outputs some result or an error. For example the `cat` command needs some text file to show the file content(result). If no text file has been provided to command an error will appears on your screen. Let's check it out.
+
+![cat readme](./assets/cat_README.png)
+
+Here we have the input **README.md** to the command `cat`. Our output is all content under the command.
+
+![cat undefined](./assets/cat_undefined.png)
+
+Here we have another input and our output is an error.
+
+There are three standards of commands: **stdin**, **stdout** and **stderr**. It can be useful to combinate some commands. For example we can use the result of some command to input to another or to get the erros of some command to write in some file like a log. Let's check it out.
+
+![files txt](./assets/cat_file.png)
+
+We use the result of `cat` command filter the lines that have 'text' string with the `grep` command.
+
+![whitout output](./assets/without_output.png)
+
+Where is our output?! I used the `ls` command but has nothing on my screen (the standard output of linux). 
+
+![files txt](./assets/files_txt.png)
+
+Here was our results and errors!!
+I used the `|`, `1>` and `2>` to handle the inputs and outputs. See below some examples of these commands.
+
+- `|`
+
+    *Syntax*: `{command1} | {command2}`
+    
+    *Description*: The output of the first command (command1) will be the input of the last command (command2). You can use it whener you want. Example: `{command1} | {command2} ... | {commandN} `
+
+- `>`
+
+    *Syntax*: `{command1} > file.txt`
+
+    *Description*: The output (result) of the command1 will create or replace a new file (file.txt) writed the results of command1.
+
+- `>>`
+- `1>`
+- `2>`
+- `<`
 
 shell bash
 
