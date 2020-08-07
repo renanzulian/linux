@@ -3,7 +3,7 @@
 ## Determine and configure hardware settings
 
 1. Check hardware's information below:
-- Audio device name that are running
+- Audio device name that is running
 - IRQ Number from Audio device
 - How much devices are plugged in USB
 - CPU Name
@@ -40,4 +40,4 @@ Removing: `sudo modprobe -r batman-adv`
 
 Question 4:
 
-The modprobe command provides all dependencies of the module that you want to insert. 
+The modprobe command provides all module dependencies that you want to insert. 
