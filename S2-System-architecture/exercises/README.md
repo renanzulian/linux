@@ -41,3 +41,16 @@ Removing: `sudo modprobe -r batman-adv`
 Question 4:
 
 The modprobe command provides all module dependencies that you want to insert. 
+
+-------
+
+## Boot the system
+
+5. Get the kernel file name loaded
+
+## Answers
+
+Question 5:
+
+`demesg | grep BOOT_IMAGE`
+
